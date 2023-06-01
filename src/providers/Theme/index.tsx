@@ -14,13 +14,15 @@ const theme = {
     gray: '#95a5a6',
   },
   layer: 'rgba(255,255,255,0.05)',
+  textOverflow:
+    'text-overflow: ellipsis; overflow: hidden; white-space: nowrap;',
 };
 
-interface Theme {
+interface ThemeProps {
   children: ReactNode;
 }
 
-const Theme: FC<Theme> = ({ children }) => {
+const Theme: FC<ThemeProps> = ({ children }) => {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 };
 
