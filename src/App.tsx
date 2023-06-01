@@ -2,13 +2,14 @@ import React from 'react';
 
 import RouterProvider from './providers/Router';
 import GlobalStyle from './providers/Theme/global';
+import ThemeProvider from './providers/Theme';
 
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider>
       <GlobalStyle />
       <RouterProvider />
-    </div>
+    </ThemeProvider>
   );
 }
 

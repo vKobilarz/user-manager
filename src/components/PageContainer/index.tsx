@@ -2,11 +2,11 @@ import React, { FC, ReactNode } from 'react';
 
 import * as S from './styles';
 
-interface PageContainer {
+interface PageContainerProps {
   children: ReactNode;
 }
 
-const PageContainer: FC<PageContainer> = ({ children }) => {
+const PageContainer: FC<PageContainerProps> = ({ children }) => {
   return (
     <S.Container>
       <S.Content>{children}</S.Content>

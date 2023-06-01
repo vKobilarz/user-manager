@@ -1,7 +1,9 @@
 import React from 'react';
 
+import PageContainer from '../../components/PageContainer';
+
 const UserListPage = () => {
-  return <div>User List</div>;
+  return <PageContainer>User List</PageContainer>;
 };
 
 export default UserListPage;

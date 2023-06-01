@@ -13,6 +13,7 @@ const theme = {
     black: '#2c3e50',
     gray: '#95a5a6',
   },
+  layer: 'rgba(255,255,255,0.05)',
 };
 
 interface Theme {
