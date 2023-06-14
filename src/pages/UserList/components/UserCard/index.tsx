@@ -9,6 +9,7 @@ import { deleteUser } from '../../../../services/user';
 import { useNotification } from '../../../../providers/Notification';
 
 const UserCard: FC<User> = ({ id, name, imageUrl, email, phoneNumber }) => {
+
   const { addNotification } = useNotification();
 
   const [isHover, setHover] = useState(false);
@@ -22,6 +23,7 @@ const UserCard: FC<User> = ({ id, name, imageUrl, email, phoneNumber }) => {
         type: 'SUCCESS',
       });
     } catch (err) {
+      console.log(err);
       addNotification({
         message: 'Ocorreu um erro ao remover o usuário',
         type: 'ERROR',
