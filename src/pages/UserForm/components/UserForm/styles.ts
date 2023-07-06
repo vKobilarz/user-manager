@@ -31,3 +31,9 @@ export const Button = styled.button`
   font-size: 16px;
   border: none;
 `;
+
+export const ErrorLabel = styled.div`
+  margin-left: 8px;
+  margin-top: 4px;
+  color: ${({theme}) => theme.colors.error};
+`;
